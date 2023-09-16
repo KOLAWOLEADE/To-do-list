@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To do list</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>To do List</title>
+        
 </head>
 <body>
-    
+    <div class="container">
+        <h1 class="heading">TO DO LIST</h1>
+        <ul id="todo-list"></ul>
+        <div class="btn-container">
+            <input type="text" id="new-task" placeholder="New task">
+            <button class="add-btn" onclick="addTask()">Add</button>
+            <button class="clear-btn" onclick="clearTasks()">Clear All</button>
+        </div>
+    </div>
+   
 </body>
 </html>
