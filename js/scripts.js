@@ -24,3 +24,5 @@ function clearTasks() {
     const taskList = document.getElementById("todo-list");
     taskList.innerHTML = "";
 }
+
+
