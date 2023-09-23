@@ -26,3 +26,24 @@ function clearTasks() {
 }
 
 
+
+
+
+
+
+function toDoList {
+
+    this.Dailytasks = {}
+    // this.Dates = {}
+    // this.times = {}
+    this.currentid = 0
+}
+
+
+function Dailytask {
+    this.dailytask = dailytask
+    this.date = date
+    this.time = time
+
+
+}
