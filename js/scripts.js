@@ -30,8 +30,8 @@ function clearTasks() {
 
 
 
-
-function toDoList() {
+// BUSSINESS LOGIC FOR ToDoList
+function ToDoList() {
 
     this.dailytasks = {};
     // this.Dates = {}
@@ -39,34 +39,34 @@ function toDoList() {
     this.currentid = 0;
 }
 
-toDoList.prototype.addDaily = function(daily){
+ToDoList.prototype.addDaily = function(daily){
 
     daily.id = this.assignid();
     this.dailytasks[daily.id] = daily;
 
 }
 
-toDoList.prototype.assignid = function(){
+ToDoList.prototype.assignid = function(){
        this.currentid ++;
        return this.currentid
 }
 
 
-AddressBook.prototype.findDaily = function(id) {
+ToDoList.prototype.findDaily = function(id) {
     if (this.dailytasks[id] != undefined) {
       return this.dailytasks[id];
     }
     return false;
   };
   
-  AddressBook.prototype.deleteDaily = function(id) {
+  ToDoList.prototype.deleteDaily = function(id) {
     if (this.dailytasks[id] === undefined) {
       return false;
     }
     delete this.dailytasks[id];
     return true;
   };
-
+// BUSSINESS LOGIC FOR Dailytask
 function Dailytask(dailytask, date, time) {
     this.dailytask = dailytask;
     this.date = date;
